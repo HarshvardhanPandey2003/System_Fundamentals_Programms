@@ -1,15 +1,21 @@
 #!/bin/bash
 
-echo "Enter a number:"
-read num
+# echo "Enter a number:"
+# read num
 
-reverse=0
+# reverse=0
 
-while [ $num -gt 0 ]; 
-do
-  digit=$((num % 10))
-  reverse=$((reverse * 10 + digit))
-  num=$((num / 10))
-done
+# while [ $num -gt 0 ]; 
+# do
+#   digit=$((num % 10))
+#   reverse=$((reverse * 10 + digit))
+#   num=$((num / 10))
+# done
 
-echo "Reversed number: $reverse"
+# echo "Reversed number: $reverse"
+
+file_path="Notes.txt"
+
+words=$(wc -w < "$file_path")
+
+echo "No. of words are : $words"
